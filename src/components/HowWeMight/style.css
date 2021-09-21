@@ -1,0 +1,50 @@
+.How-Might-Card {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+  margin-top: 50px;
+  /* border: 1px solid red; */
+  color: gray;
+  padding: 0 30px;
+}
+
+.HSM-IMG {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vw;
+  background-position: center;
+}
+
+.HWM-Container {
+  background-color: black;
+  padding: 0px 50px;
+}
+
+.Dex-1 {
+  background-image: url('../../assets/hmw1.jpeg');
+}
+.Dex-2 {
+  background-image: url('../../assets/hmw2.JPG');
+}
+.Dex-3 {
+  background-image: url('../../assets/hmw3.jpeg');
+}
+
+.HWM-Caption {
+  font-weight: normal;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 3px 0;
+  align-self: flex-start;
+}
+
+.Highlight {
+  color: white;
+}
+
+.HMW-Text {
+  line-height: 1.3rem;
+}
