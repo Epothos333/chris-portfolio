@@ -1,0 +1,22 @@
+.Project-Page-Container {
+  margin: 0;
+  width: 100%;
+  /* border: 1px solid green; */
+  min-height: 100vh;
+  /* margin: 40px; */
+}
+
+.Project-Info-Container {
+  background-color: rgb(27, 100, 209);
+  flex: 1;
+  color: white;
+  padding: 40px;
+}
+
+.Project-Content-Container {
+  flex: 2;
+}
+
+.Project-Info-Logo {
+  /* height: 100%; */
+}

@@ -95,3 +95,7 @@ code {
 .Light-Text {
   font-family: 'Roboto-Light';
 }
+
+button {
+  cursor: pointer;
+}
