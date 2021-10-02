@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export function ProfeshCard({ color, client, project, need, logo, title }) {
+export function ProfeshCard({ color, client, project, need, logo, title, to }) {
   return (
-    <div className="Card-Container Cursor-Pointer" style={{ backgroundColor: color }}>
+    <Link to={`/project/${to}`} className="Card-Container Cursor-Pointer" style={{ backgroundColor: color }}>
       {/* <p>Frost Science</p> */}
       {logo &&
         <img src={logo} className={'Profesh-Logo'} alt={'Logo'} />
@@ -15,6 +16,6 @@ export function ProfeshCard({ color, client, project, need, logo, title }) {
         <p className="Light-Text">Project: {project}</p>
         <p className="Light-Text">Business need: {need}</p>
       </section>
-    </div>
+    </Link>
   )
 }

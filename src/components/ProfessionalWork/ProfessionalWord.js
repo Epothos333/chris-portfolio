@@ -20,6 +20,7 @@ export function ProfessionalWork() {
           client={'The Ford Motor Company'}
           project={'Re-Imagine the Purchasing Process'}
           need={'Retain new employees'}
+          to={'ford'}
         />
         <ProfeshCard
           title={'Strategic Partners'}
@@ -27,6 +28,7 @@ export function ProfessionalWork() {
           client={'Strategic Partners Real Estate - Tampa Water Street'}
           project={'Create a virtual assistance for visitors and locals'}
           need={'Keep users in touch with the latest happenings'}
+          to={'tampa'}
         />
         <ProfeshCard
           logo={royal}
@@ -34,6 +36,7 @@ export function ProfessionalWork() {
           client={'Royal Carribean'}
           project={'Re-Design the 3-Day cruise experience'}
           need={'Capture more and new cruise travelers'}
+          to={'royal'}
         />
         <ProfeshCard
           logo={double}
@@ -41,6 +44,7 @@ export function ProfessionalWork() {
           client={'Smithsonian + National Geographic'}
           project={'Creating your own American Story'}
           need={'Digital transformation, increase attendance'}
+          to={'smith'}
         />
         <ProfeshCard
           logo={natGeo}
@@ -48,6 +52,7 @@ export function ProfessionalWork() {
           client={'NatGeo Science Expeditions'}
           project={'Build a digital real-time Science program'}
           need={'Digital transformation'}
+          to={'natgeo'}
         />
         <ProfeshCard
           logo={pearson}
@@ -55,6 +60,7 @@ export function ProfessionalWork() {
           client={'Pearson Education'}
           project={'enVisionMATH K-5 studen and teacher math program'}
           need={'Reinvent the math learning experience'}
+          to={'pearson'}
         />
         <ProfeshCard
           logo={weather}
@@ -62,23 +68,27 @@ export function ProfessionalWork() {
           client={'The Source'}
           project={'Digital story about the coffee industry'}
           need={'Informative human interest story'}
+
+          to={'weather'}
         />
-        <ProfeshCard
-        title={'Frost Science'}
+        {/* <ProfeshCard
+          title={'Frost Science'}
           color={'rgb(19,139,125)'}
           client={'The Frost Science Musuem'}
           project={'Musuem opening'}
           need={'Inform the public of the attractions available'}
-        />
+
+        /> */}
         <ProfeshCard
           title={'Queso: Heuristic Research'}
           color={'rgb(119, 192, 73)'}
           client={'The University of Miami'}
           project={'Website audit and redesign'}
           need={'Improve adoption rates'}
+          to={'user'}
         />
-          <div className="Card-Container Cursor-Pointer Monster-Card" style={{ backgroundColor: 'rgb(168,219,95)' }}>
-          </div>
+        {/* <div className="Card-Container Cursor-Pointer Monster-Card" style={{ backgroundColor: 'rgb(168,219,95)' }}>
+        </div> */}
       </div>
     </section>
   )
