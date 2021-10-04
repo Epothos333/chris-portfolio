@@ -10,12 +10,10 @@ export function ProjectPage() {
   const data = projectData.filter((proj) => id === proj.id)[0];
   if (!data) return <div />
 
-  console.log(data.info)
-
   return (
     <div className={'Project-Page-Container Flex-Row'}>
       <ProjectInfo data={data.info}/>
-      <ProjectContent data={data.content}/>
+      <ProjectContent data={data.content} border={data.info.backgroundColor}/>
     </div>
   )
 }

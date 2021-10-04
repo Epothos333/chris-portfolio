@@ -41,3 +41,26 @@
   background-position-y: -15%;
   background-size: 18rem;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .Profoessional-Section {
+    align-items: center;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .Card-Container {
+    flex: 1;
+    margin: 5px 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Profesh-Logo {
+    object-fit: contain;
+    height: 3rem;
+    max-width: 100%;
+  }
+}

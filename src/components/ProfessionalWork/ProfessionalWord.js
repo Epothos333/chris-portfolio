@@ -7,13 +7,14 @@ import natGeo from './logos/natGeo.png';
 import pearson from './logos/pearson.png';
 import weather from './logos/weather.png';
 import './style.css';
+import { useViewPort } from '../../hooks/useViewPort';
 
 export function ProfessionalWork() {
+  const {isMobile} = useViewPort();
   return (
-    <section className="Profoessional-Section">
+    <section className="Profoessional-Section" id="profession-work">
       <h1 className="Profesh-Header">Professional Work</h1>
-      <div className="Flex-Row Full-Width J-S-B Cards-Container">
-
+      <div className={`${isMobile ? 'Flex-Column' : 'Flex-Row'} Full-Width J-S-B Cards-Container`}>
         <ProfeshCard
           logo={ford}
           color={'rgb(26,100,209)'}
@@ -26,7 +27,7 @@ export function ProfessionalWork() {
           title={'Strategic Partners'}
           color={'rgb(120, 169, 243)'}
           client={'Strategic Partners Real Estate - Tampa Water Street'}
-          project={'Create a virtual assistance for visitors and locals'}
+          project={'Create a virtual assistant for visitors and locals'}
           need={'Keep users in touch with the latest happenings'}
           to={'tampa'}
         />

@@ -80,6 +80,10 @@ code {
   align-self: flex-start;
 }
 
+.A-S-C {
+  align-self: center;
+}
+
 .Cursor-Pointer {
   cursor: pointer;
 }

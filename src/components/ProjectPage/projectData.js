@@ -59,7 +59,7 @@ export const projectData = [
       backgroundColor: 'rgb(120,169,243)',
       logo: 'https://www.dropbox.com/s/0j8ygy3ktgt7pra/Strategic%20Partners%20_Tampa%20Water%20Street.png?raw=1',
       logoWidth: 100,
-      title: 'A Mobile Virtual Assistance',
+      title: 'A Mobile Virtual Assistant',
       lines: [
         'Project Overview',
         'Strategic Partners approached Accenture with the request to solve a design problem. Build a prototype and design a virtual assistant for locals and tourists visiting Tampa. We were challenged to develop the concept with a look and feel, which evoked a high-tech look with real-time experience notifications.  ',
@@ -98,8 +98,8 @@ export const projectData = [
         header: 'Prototype',
         paragraph: 'Overview of the Design of the voice-activated app providing real-time event information to locals and visitors.',
         images: [
-          'https://www.dropbox.com/s/7pthr8fdolp7xdc/TWS%20All%20Screens%20white.png?raw=1',
-          'https://www.dropbox.com/s/1cmtft36j9oeuh7/02_Tool%20order%20map.JPG?raw=1',
+          // 'https://www.dropbox.com/s/7pthr8fdolp7xdc/TWS%20All%20Screens%20white.png?raw=1',
+          // 'https://www.dropbox.com/s/1cmtft36j9oeuh7/02_Tool%20order%20map.JPG?raw=1',
           'https://www.dropbox.com/s/twfhrtuit2pkz16/TWS%20Phone%20prototype.png?raw=1',
         ],
       },
@@ -115,7 +115,7 @@ export const projectData = [
       title: 'ReDesign the 3 Day Cruise Experience',
       lines: [
         'Project Overview',
-        'Royal Caribbean approached me to re-imagine the lucrative3-Day cruise experience. I began interviewing users who had never been on a cruise before. The qualitative research pointed to customers not knowing what to expect from each port-of-call based on the images used. My solution included short on-site videos to provide a more immersive look into the ports of call during the trip. A secondary goal was to clean up the cluttered look and feel of the website.',
+        'Royal Caribbean approached me to re-imagine the lucrative 3-Day cruise experience. I began interviewing users who had never been on a cruise before. The qualitative research pointed to customers not knowing what to expect from each port-of-call based on the images used. My solution included short on-site videos to provide a more immersive look into the ports of call during the trip. A secondary goal was to clean up the cluttered look and feel of the website.',
         'My role included'
       ],
       roles: [
@@ -131,6 +131,7 @@ export const projectData = [
       {
         header: 'Buying a Cruise - User Flow',
         images: [
+          'https://www.dropbox.com/s/jhknauh7ebxvpr7/Royal%20Use%20Flow.png?raw=1'
         ],
       },
       {
@@ -255,7 +256,7 @@ export const projectData = [
     id: 'pearson',
     info: {
       backgroundColor: 'rgb(161,15,255)',
-      logo: 'https://www.dropbox.com/s/bciccrthpkqpztx/pearson-logo.svg?raw=1',
+      logo: 'https://www.dropbox.com/s/liis820cr0aep7b/pearson-logo%203.png?raw=1',
       logoWidth: 40,
       title: 'enVisionMATH',
       lines: [

@@ -76,3 +76,13 @@
 .Phone-Number {
   font-size: 22px;
 }
+
+@media only screen and (max-width: 800px) {
+  .About-Section {
+    align-items: center;
+    padding-right: 0;
+  }
+  .Personal-Section {
+    padding: 10px 40px;
+  }
+}

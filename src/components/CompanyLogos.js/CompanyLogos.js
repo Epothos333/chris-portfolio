@@ -14,9 +14,12 @@ import a14 from './companyLogos/14.svg';
 import a15 from './companyLogos/15.svg';
 import a16 from './companyLogos/16.png';
 import './style.css';
+import { useViewPort } from '../../hooks/useViewPort';
 
 
 export function CompanyLogos() {
+  const {isMobile} = useViewPort();
+  if (isMobile) return <span></span>
   return (
    <Marquee style={{display: 'flex', alignItems: 'center'}}>
      <img src={a1} alt="compant-logo" style={{flex: 1, minWidth: '100px', padding: '0px 20px'}}/>

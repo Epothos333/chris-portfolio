@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   height: 50vh;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   /* border: 1px solid red; */
   color: gray;
   padding: 0 30px;
@@ -47,4 +47,18 @@
 
 .HMW-Text {
   line-height: 1.3rem;
+}
+
+.HMW-Section-Titile {
+  padding: 0 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .HSM-IMG {
+    height: 30vh;
+  }
+  
+  .How-Might-Card {
+    padding: 0 10px;
+  }
 }

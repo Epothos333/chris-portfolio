@@ -1,0 +1,20 @@
+.Mobile-Menu-Container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.Mobile-Menu-Top {
+  /* flex: 1; */
+  background-color: rgb(27, 100, 209);
+  color: white;
+  min-height: 40vh;
+}
+
+.Mobile-Menu-Bottom {
+  /* flex: 1; */
+  background-color: transparent;
+}

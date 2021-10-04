@@ -11,7 +11,6 @@ import {
 } from "react-router-dom";
 import { ProjectPage } from './components/ProjectPage/ProjectPage';
 
-
 function FrontPage() {
   return (
     <>
