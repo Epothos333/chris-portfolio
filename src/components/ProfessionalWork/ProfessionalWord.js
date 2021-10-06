@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ProfeshCard } from './ProfeshCard';
 import ford from './logos/fordLogo.png';
 import royal from './logos/royal.png';
@@ -10,9 +10,11 @@ import './style.css';
 import { useViewPort } from '../../hooks/useViewPort';
 
 export function ProfessionalWork() {
+  const theRef = useRef(null);
   const {isMobile} = useViewPort();
+
   return (
-    <section className="Profoessional-Section" id="profession-work">
+    <section ref={theRef} className="Profoessional-Section" id="profession-work">
       <h1 className="Profesh-Header">Professional Work</h1>
       <div className={`${isMobile ? 'Flex-Column' : 'Flex-Row'} Full-Width J-S-B Cards-Container`}>
         <ProfeshCard

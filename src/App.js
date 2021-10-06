@@ -10,6 +10,7 @@ import {
   Route,
 } from "react-router-dom";
 import { ProjectPage } from './components/ProjectPage/ProjectPage';
+import { ScrollToTop } from './components/ScrollToTop';
 
 function FrontPage() {
   return (
@@ -26,10 +27,12 @@ function FrontPage() {
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/project/:id" component={ProjectPage} />
-        <Route path="/" component={FrontPage} />
-      </Switch>
+      <ScrollToTop>
+        <Switch>
+          <Route path="/project/:id" component={ProjectPage} />
+          <Route path="/" component={FrontPage} />
+        </Switch>
+      </ScrollToTop>
     </Router>
   )
 }

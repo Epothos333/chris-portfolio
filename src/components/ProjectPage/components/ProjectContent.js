@@ -1,8 +1,14 @@
 import React from 'react';
+import { useViewPort } from '../../../hooks/useViewPort';
+import { ReturnButton } from './ReturnButton';
 
 export function ProjectContent({ data, border }) {
+  const {isMobile} = useViewPort()
   return (
     <div className={'Project-Content-Container'}>
+      {!isMobile &&
+        <ReturnButton color={'gray'} margin={'40px 40px 10px 0'}/>
+      }
       <div className={'Project-Content-Inner-Padding'}>
         {data.map((item, index) => {
           const images = item.images.map((img, index) => {
