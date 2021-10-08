@@ -278,6 +278,7 @@ export const projectData = [
     },
     content: [
       {
+        outline: false,
         images: [
           'https://www.dropbox.com/s/w3t1j04rusl0s1c/EnVisionMAth%20products.png?raw=1',
           'https://www.dropbox.com/s/txwje3p42n01jab/enVisionMATh%2002.png?raw=1'

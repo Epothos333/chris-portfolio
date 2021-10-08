@@ -83,10 +83,10 @@ export function ProfessionalWork() {
 
         /> */}
         <ProfeshCard
-          title={'Queso: Heuristic Research'}
+          title={'User Research Studies'}
           color={'rgb(119, 192, 73)'}
-          client={'The University of Miami'}
-          project={'Website audit and redesign'}
+          client={'Various Clients'}
+          project={'Website audit and redesign recommendations'}
           need={'Improve adoption rates'}
           to={'user'}
         />

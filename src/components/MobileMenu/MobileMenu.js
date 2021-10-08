@@ -1,13 +1,13 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {FaWindowClose} from 'react-icons/fa'
+import {AiOutlineClose} from 'react-icons/ai'
 import './style.css';
 
 export const MobileMenu = ({handleClick}) => {
   return (
     <section className="Mobile-Menu-Container">
           <div className="Flex-Column A-C Mobile-Menu-Top J-S-A">
-            <FaWindowClose onClick={handleClick}/>
+            <AiOutlineClose onClick={handleClick}/>
             <AnchorLink className="Nav-Link" href="#profession-work" onClick={handleClick}>WORK</AnchorLink>
             <AnchorLink className="Nav-Link" href="#about" onClick={handleClick}>ABOUT</AnchorLink>
             <AnchorLink className="Nav-Link" href="#cv" onClick={handleClick}>CV</AnchorLink>
