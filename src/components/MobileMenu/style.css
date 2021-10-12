@@ -19,7 +19,7 @@
   background-color: transparent;
 }
 
-.Nav-Link {
+.Nav-Link-Mobile {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   width: 100%;
@@ -28,6 +28,9 @@
   justify-content: center;
   align-items: center;
   flex: 2; 
+  text-decoration: none;
+  cursor: pointer;
+  color: unset;
 }
 
 .Menu-Close {
