@@ -9,7 +9,7 @@
 
 .Mobile-Menu-Top {
   /* flex: 1; */
-  background-color: rgb(27, 100, 209);
+  background-color: black;
   color: white;
   min-height: 40vh;
 }
@@ -17,4 +17,22 @@
 .Mobile-Menu-Bottom {
   /* flex: 1; */
   background-color: transparent;
+}
+
+.Nav-Link {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 2; 
+}
+
+.Menu-Close {
+  flex: 1;
+  align-self: flex-end;
+  padding-right: 2rem;
+  font-size: 24px;
 }

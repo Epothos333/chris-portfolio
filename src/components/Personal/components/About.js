@@ -1,9 +1,7 @@
 import React from 'react';
-import { useViewPort } from '../../../hooks/useViewPort';
 import ChrisRoyResume from './ChrisRoyResume.pdf';
 
 export function About() {
-  const { isMobile } = useViewPort();
   return (
     <section className="Flex-Column About-Section" id="about">
       <h1 className="About-Header">About</h1>
@@ -13,11 +11,9 @@ export function About() {
       <p className="Light-Text">
         Getting underneath what customers want, uncovering their frustrations and unfulfilled needs through discovery interviews, and bringing them along in the development process is what I love about my work. Ensuring the product or brand has a clearly articulated, unique purpose in the marketplace and simple guiding principles that anyone in a company can use to help them look at customer problems differently.  I call this customer design thinking arguably one of the essential tools a team possesses.
       </p>
-      {!isMobile &&
-        <a href={ChrisRoyResume} download>
-          <button id="cv" className="Banner-Button" style={{ marginTop: '50px' }}>Download CV</button>
-        </a>
-      }
+      <a href={ChrisRoyResume} download>
+        <button id="cv" className="Banner-Button" style={{ marginTop: '50px' }}>Download CV</button>
+      </a>
     </section>
   )
 }

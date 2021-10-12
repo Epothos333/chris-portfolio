@@ -1,3 +1,6 @@
+import pdf1 from './EthnographyWhitakerRoy.pdf';
+import pdf2 from './HeuristicReviewPresentation.pdf';
+
 export const projectData = [
   {
     id: 'ford',
@@ -315,6 +318,10 @@ export const projectData = [
           'https://www.dropbox.com/s/w3t1j04rusl0s1c/EnVisionMAth%20products.png?raw=1',
           'https://www.dropbox.com/s/txwje3p42n01jab/enVisionMATh%2002.png?raw=1'
         ],
+        links: [
+          pdf1,
+          pdf2
+        ]
       },
     ]
   },

@@ -16,7 +16,7 @@ export function HowWeMight() {
           src={hwm1}
           dex={1}
           caption={'Unconnect discovery sprint with FCA clients'}
-          text={'Discover innovation through Discovery Sprints to define the Why, What, and Who our users are resonding and the pain points occurring in the current state.'}
+          text={'Innovation through Discovery Sprints to define how and why users are responding to the pain points occurring in the current state and how we can improve the experience.'}
         />
         <HowMightCard
           src={hwm2}
@@ -28,7 +28,7 @@ export function HowWeMight() {
           src={hwm3}
           dex={3}
           caption={'Facilitating a team design thinking innovation activity'}
-          text={'Explore and Ideate multiple solutions for the MVP considering the competition, market need, and customer feedback from various sources.'}
+          text={'Explore and ideate multiple solutions for the MVP considering the competition, market need, and customer feedback from various sources.'}
         />
       </section>
     </section>
