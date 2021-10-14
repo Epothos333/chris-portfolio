@@ -16,7 +16,7 @@ export function ProjectContent({ data, border }) {
             const renderImg = <img key={`${index}-images`} style={style} alt="Project-Outcome" src={img} className={`Project-Content-Image ${item.shrink && 'Project-Contant-Shrink'}`} />;
             if (item.links) {
               return (
-                <div className={'Flex-Row J-C A-C'}>
+                <div className={'Flex-Row J-C A-C'} key={`${index}-links-container`}>
                   {renderImg}
                   <button className="Banner-Button Link-Button" style={{
                     position: 'absolute',
@@ -36,7 +36,9 @@ export function ProjectContent({ data, border }) {
           })
           return (
             <div key={`${index}-content`} className={'Flex-Column'}>
-              <h3 className={'Profile-Content-Header'}>{item.header}</h3>
+              {item.header &&
+                <h3 className={'Profile-Content-Header'}>{item.header}</h3>
+              }
               {images}
             </div>
           )

@@ -99,7 +99,7 @@ export function ProfessionalWork() {
         />
         <ProfeshCard
           title={'User Research Studies'}
-          color={'rgb(119, 192, 73)'}
+          color={'rgb(19,139,125)'}
           client={'Various Clients'}
           project={'Website audit and redesign recommendations'}
           need={'Improve adoption rates'}

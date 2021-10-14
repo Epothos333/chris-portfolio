@@ -1,15 +1,15 @@
 import React from 'react';
-import sendmail from 'sendmail';
+// import sendmail from 'sendmail';
 
 export function ContactForm() {
-  const handleClick = () => {
-    sendmail()({
-      from: 'edwinaoraha@yahoo.com',
-      to: 'e.aoraha33@gmail.com',
-      subject: 'test sendmail',
-      html: 'Mail of test sendmail ',
-    })
-  }
+  // const handleClick = () => {
+  //   sendmail()({
+  //     from: 'edwinaoraha@yahoo.com',
+  //     to: 'e.aoraha33@gmail.com',
+  //     subject: 'test sendmail',
+  //     html: 'Mail of test sendmail ',
+  //   })
+  // }
   return (
     <section className="Flex-Column Contact-Form-Section" id="contact">
       {/* <h1 className="Contact-Header">Contact</h1>

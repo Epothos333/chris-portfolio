@@ -12,7 +12,7 @@ import a12 from './companyLogos/12.svg';
 import smith from './companyLogos/smith.png';
 import a14 from './companyLogos/14.svg';
 import weather from './companyLogos/weather.png';
-import a16 from './companyLogos/16.png';
+// import a16 from './companyLogos/16.png';
 import './style.css';
 import { useViewPort } from '../../hooks/useViewPort';
 
