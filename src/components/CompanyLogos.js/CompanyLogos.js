@@ -11,7 +11,7 @@ import a12 from './companyLogos/12.svg';
 // import a13 from './companyLogos/13.svg';
 import smith from './companyLogos/smith.png';
 import a14 from './companyLogos/14.svg';
-import a15 from './companyLogos/15.svg';
+import weather from './companyLogos/weather.png';
 import a16 from './companyLogos/16.png';
 import './style.css';
 import { useViewPort } from '../../hooks/useViewPort';
@@ -22,18 +22,18 @@ export function CompanyLogos() {
   if (isMobile) return <span></span>
   return (
    <Marquee style={{display: 'flex', alignItems: 'center'}}>
-     <img src={a1} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a2} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a3} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a4} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a5} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a6} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a8} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a12} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={smith} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a14} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a15} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a16} alt="compant-logo" style={{flex: 1, minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a1} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a2} alt="compant-logo" style={{ minWidth: '75px', margin: '0px 20px'}}/>
+     <img src={a3} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a4} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a5} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a6} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a8} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a12} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={smith} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={a14} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
+     <img src={weather} alt="compant-logo" style={{ minWidth: '50px', margin: '0px 20px'}}/>
+
    </Marquee>
   )
 }

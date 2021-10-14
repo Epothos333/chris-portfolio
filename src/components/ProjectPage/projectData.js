@@ -1,5 +1,7 @@
 import pdf1 from './EthnographyWhitakerRoy.pdf';
 import pdf2 from './HeuristicReviewPresentation.pdf';
+import queso1 from './queso1.png';
+import queso2 from './queso2.png';
 
 export const projectData = [
   {
@@ -100,9 +102,8 @@ export const projectData = [
       {
         header: 'Prototype',
         paragraph: 'Overview of the Design of the voice-activated app providing real-time event information to locals and visitors.',
+        shrink: true,
         images: [
-          // 'https://www.dropbox.com/s/7pthr8fdolp7xdc/TWS%20All%20Screens%20white.png?raw=1',
-          // 'https://www.dropbox.com/s/1cmtft36j9oeuh7/02_Tool%20order%20map.JPG?raw=1',
           'https://www.dropbox.com/s/twfhrtuit2pkz16/TWS%20Phone%20prototype.png?raw=1',
         ],
       },
@@ -315,8 +316,8 @@ export const projectData = [
     content: [
       {
         images: [
-          'https://www.dropbox.com/s/w3t1j04rusl0s1c/EnVisionMAth%20products.png?raw=1',
-          'https://www.dropbox.com/s/txwje3p42n01jab/enVisionMATh%2002.png?raw=1'
+          queso1,
+          queso2
         ],
         links: [
           pdf1,

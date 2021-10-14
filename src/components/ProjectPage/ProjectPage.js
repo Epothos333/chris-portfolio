@@ -6,8 +6,11 @@ import { ProjectInfo } from './components/ProjectInfo';
 import { projectData } from './projectData';
 import './style.css';
 
-export function ProjectPage() {
-  const {id} = useParams();
+export function ProjectPage({url}) {
+  let {id} = useParams();
+  if (url) {
+    id = url;
+  }
   const data = projectData.filter((proj) => id === proj.id)[0];
   const {isMobile} = useViewPort();
   if (!data) return <div />

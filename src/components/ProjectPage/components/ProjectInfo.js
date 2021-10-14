@@ -6,9 +6,6 @@ export function ProjectInfo({ data: { title, lines, roles, logo, backgroundColor
   const { isMobile } = useViewPort();
   return (
     <div className={'Project-Info-Container'} style={{ backgroundColor }}>
-      {isMobile &&
-        <ReturnButton color='white' margin={'0 0 40px 0'}/>
-      }
       <div className={'Project-Info-Logo-Container'} >
 
         <img src={logo} alt="Logo" className={'Project-Info-Logo'} style={{ width: logoWidth + '%' }} />

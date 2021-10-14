@@ -12,7 +12,7 @@ export function ContactForm() {
   }
   return (
     <section className="Flex-Column Contact-Form-Section" id="contact">
-      <h1 className="Contact-Header">Contact</h1>
+      {/* <h1 className="Contact-Header">Contact</h1>
       <p className="Light-Text Contact-Form-Info">
         Cell: 773 - 297 - 7062
       </p>
@@ -22,8 +22,7 @@ export function ContactForm() {
       <input className="Contact-Input" placeholder="NAME"/>
       <input className="Contact-Input" placeholder="EMAIL ADDRESS"/>
       <textarea className="Contact-Message" placeholder="MESSAGE (optional)"/>
-      {/* <input className="Contact-Input" placeholder="MESSAGE (optional)"/> */}
-      <button onClick={handleClick} className="Send-Button">Send</button>
+      <button onClick={handleClick} className="Send-Button">Send</button> */}
     </section>
   )
 }

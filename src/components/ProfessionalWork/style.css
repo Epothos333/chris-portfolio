@@ -50,6 +50,11 @@
     text-align: center;
   }
 
+  .Card-Container:hover {
+    box-shadow: none;
+    transform: none;
+  }
+
   .Card-Container {
     flex: 1;
     margin: 5px 0;

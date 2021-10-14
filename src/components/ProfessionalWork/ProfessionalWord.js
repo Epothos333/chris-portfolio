@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ProfeshCard } from './ProfeshCard';
 import ford from './logos/fordLogo.png';
 import royal from './logos/royal.png';
@@ -12,6 +12,15 @@ import { useViewPort } from '../../hooks/useViewPort';
 export function ProfessionalWork() {
   const theRef = useRef(null);
   const {isMobile} = useViewPort();
+  const [show, setShow] = useState(undefined);
+
+  const handleSetShow = (id) => {
+    if (id === show) {
+      setShow(undefined)
+    } else {
+      setShow(id)
+    }
+  }
 
   return (
     <section ref={theRef} className="Profoessional-Section" id="profession-work">
@@ -24,6 +33,8 @@ export function ProfessionalWork() {
           project={'Re-Imagine the Purchasing Process'}
           need={'Retain new employees'}
           to={'ford'}
+          show={show === 'ford'}
+          setShow={() => handleSetShow('ford')}
         />
         <ProfeshCard
           title={'Strategic Partners'}
@@ -32,6 +43,8 @@ export function ProfessionalWork() {
           project={'Create a virtual assistant for visitors and locals'}
           need={'Keep users in touch with the latest happenings'}
           to={'tampa'}
+          show={show === 'tampa'}
+          setShow={() => handleSetShow('tampa')}
         />
         <ProfeshCard
           logo={royal}
@@ -40,6 +53,8 @@ export function ProfessionalWork() {
           project={'Re-Design the 3-Day cruise experience'}
           need={'Capture more and new cruise travelers'}
           to={'royal'}
+          show={show === 'royal'}
+          setShow={() => handleSetShow('royal')}
         />
         <ProfeshCard
           logo={double}
@@ -48,6 +63,8 @@ export function ProfessionalWork() {
           project={'Creating your own American Story'}
           need={'Digital transformation, increase attendance'}
           to={'smith'}
+          show={show === 'smith'}
+          setShow={() => handleSetShow('smith')}
         />
         <ProfeshCard
           logo={natGeo}
@@ -56,6 +73,8 @@ export function ProfessionalWork() {
           project={'Build a digital real-time Science program'}
           need={'Digital transformation'}
           to={'natgeo'}
+          show={show === 'natgeo'}
+          setShow={() => handleSetShow('natgeo')}
         />
         <ProfeshCard
           logo={pearson}
@@ -64,6 +83,8 @@ export function ProfessionalWork() {
           project={'enVisionMATH K-5 studen and teacher math program'}
           need={'Reinvent the math learning experience'}
           to={'pearson'}
+          show={show === 'pearson'}
+          setShow={() => handleSetShow('pearson')}
         />
         <ProfeshCard
           logo={weather}
@@ -73,15 +94,9 @@ export function ProfessionalWork() {
           need={'Informative human interest story'}
 
           to={'weather'}
+          show={show === 'weather'}
+          setShow={() => handleSetShow('weather')}
         />
-        {/* <ProfeshCard
-          title={'Frost Science'}
-          color={'rgb(19,139,125)'}
-          client={'The Frost Science Musuem'}
-          project={'Musuem opening'}
-          need={'Inform the public of the attractions available'}
-
-        /> */}
         <ProfeshCard
           title={'User Research Studies'}
           color={'rgb(119, 192, 73)'}
@@ -89,9 +104,9 @@ export function ProfessionalWork() {
           project={'Website audit and redesign recommendations'}
           need={'Improve adoption rates'}
           to={'user'}
+          show={show === 'user'}
+          setShow={() => handleSetShow('user')}
         />
-        {/* <div className="Card-Container Cursor-Pointer Monster-Card" style={{ backgroundColor: 'rgb(168,219,95)' }}>
-        </div> */}
       </div>
     </section>
   )

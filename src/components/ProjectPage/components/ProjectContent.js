@@ -6,9 +6,6 @@ export function ProjectContent({ data, border }) {
   const { isMobile } = useViewPort()
   return (
     <div className={'Project-Content-Container'}>
-      {!isMobile &&
-        <ReturnButton color={'gray'} margin={'40px 40px 10px 0'} />
-      }
       <div className={'Project-Content-Inner-Padding'}>
         {data.map((item, index) => {
           const images = item.images.map((img, index) => {
@@ -16,11 +13,24 @@ export function ProjectContent({ data, border }) {
             if (item.outline !== false) {
               style.border = `2px solid ${border}`
             }
-            const renderImg = <img key={`${index}-images`} style={style} alt="Project-Outcome" src={img} className={'Project-Content-Image'} />;
+            const renderImg = <img key={`${index}-images`} style={style} alt="Project-Outcome" src={img} className={`Project-Content-Image ${item.shrink && 'Project-Contant-Shrink'}`} />;
             if (item.links) {
-              return <a href={item.links[index]}>
-                {renderImg}
-              </a>
+              return (
+                <div className={'Flex-Row J-C A-C'}>
+                  {renderImg}
+                  <button className="Banner-Button Link-Button" style={{
+                    position: 'absolute',
+                    marginTop: isMobile ? '50px' : '125px',
+                    width: isMobile ? '150px' : '200px,',
+                    fontSize: isMobile ? '12px' : '16px'
+
+                  }}>
+                    <a href={item.links[index]} target="_blank" rel="noreferrer" >
+                      Link to Project
+                    </a>
+                  </button>
+                </div>
+              )
             }
             return renderImg;
           })
@@ -33,6 +43,9 @@ export function ProjectContent({ data, border }) {
         })}
 
       </div>
+      {!isMobile &&
+        <ReturnButton color={'gray'} margin={'10px 40px 40px 0'} />
+      }
     </div>
   )
 }

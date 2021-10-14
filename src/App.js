@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { ProjectPage } from './components/ProjectPage/ProjectPage';
 import { ScrollToTop } from './components/ScrollToTop';
+import { useViewPort } from './hooks/useViewPort';
 
 function FrontPage() {
   return (
@@ -25,11 +26,17 @@ function FrontPage() {
 }
 
 function App() {
+  const { isMobile } = useViewPort();
   return (
     <Router>
       <ScrollToTop>
         <Switch>
-          <Route path="/project/:id" component={ProjectPage} />
+          {!isMobile &&
+            <Route path="/project/:id" component={ProjectPage} />
+          }
+          {isMobile &&
+            < Route path="/project/:id" component={FrontPage} />
+          }
           <Route path="/" component={FrontPage} />
         </Switch>
       </ScrollToTop>
