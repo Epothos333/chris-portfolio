@@ -320,8 +320,8 @@ export const projectData = [
           queso2
         ],
         links: [
+          pdf2,
           pdf1,
-          pdf2
         ]
       },
     ]

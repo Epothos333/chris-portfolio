@@ -1,9 +1,6 @@
 import React from 'react';
-import { useViewPort } from '../../../hooks/useViewPort';
-import { ReturnButton } from './ReturnButton';
 
 export function ProjectInfo({ data: { title, lines, roles, logo, backgroundColor, logoWidth, link, more } }) {
-  const { isMobile } = useViewPort();
   return (
     <div className={'Project-Info-Container'} style={{ backgroundColor }}>
       <div className={'Project-Info-Logo-Container'} >
@@ -13,7 +10,7 @@ export function ProjectInfo({ data: { title, lines, roles, logo, backgroundColor
       <h2>{title}</h2>
       <span className='Light-Text'>
         {lines.map((line, index) => <p key={`${index}-line`}>{line}</p>)}
-        <ul>
+        <ul style={{textAlign: 'left'}}>
           {roles.map((role, index) => <li key={`${index}-list`}>{role}</li>)}
         </ul>
         {link &&
