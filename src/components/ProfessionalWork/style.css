@@ -34,15 +34,6 @@
   height: 2rem;
 }
 
-.Monster-Card {
-  background-image: url('./logos/monster.png');
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: -15%;
-  background-size: 18rem;
-}
-
-
 @media only screen and (max-width: 800px) {
   .Profoessional-Section {
     align-items: center;

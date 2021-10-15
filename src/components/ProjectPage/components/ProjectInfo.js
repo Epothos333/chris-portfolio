@@ -1,5 +1,7 @@
 import React from 'react';
 
+const BOLD_TEXT = ['Project Overview', 'Business Need', 'My role included']
+
 export function ProjectInfo({ data: { title, lines, roles, logo, backgroundColor, logoWidth, link, more } }) {
   return (
     <div className={'Project-Info-Container'} style={{ backgroundColor }}>
@@ -9,16 +11,20 @@ export function ProjectInfo({ data: { title, lines, roles, logo, backgroundColor
       </div>
       <h2>{title}</h2>
       <span className='Light-Text'>
-        {lines.map((line, index) => <p key={`${index}-line`}>{line}</p>)}
-        <ul style={{textAlign: 'left'}}>
+        {lines.map((line, index) =>
+          <p key={`${index}-line`} className={`${BOLD_TEXT.indexOf(line) !== -1 && 'Bold-Text'}`}>{line}</p>
+        )}
+        <ul style={{ textAlign: 'left' }}>
           {roles.map((role, index) => <li key={`${index}-list`}>{role}</li>)}
         </ul>
         {link &&
-          <button className="Banner-Button Link-Button">
-            <a href={link} target="_blank" rel="noreferrer" >
-              Link to Project
-            </a>
-          </button>
+          <span className="Flex-Column J-C A-C">
+            <button className="Banner-Button Link-Button">
+              <a href={link} target="_blank" rel="noreferrer" >
+                Link to Project
+              </a>
+            </button>
+          </span>
         }
       </span>
       {more &&

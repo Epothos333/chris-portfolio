@@ -21,18 +21,18 @@ export function CompanyLogos() {
   const {isMobile} = useViewPort();
   if (isMobile) return <span></span>
   return (
-   <Marquee style={{display: 'flex', alignItems: 'center'}}>
-     <img src={a1} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a2} alt="compant-logo" style={{ minWidth: '75px', margin: '0px 20px'}}/>
-     <img src={a3} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a4} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a5} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a6} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a8} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a12} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={smith} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={a14} alt="compant-logo" style={{ minWidth: '100px', margin: '0px 20px'}}/>
-     <img src={weather} alt="compant-logo" style={{ minWidth: '50px', margin: '0px 20px'}}/>
+   <Marquee style={{display: 'flex', alignItems: 'center', height: '8vh', padding: '5px 0', overflow: 'hidden'}}>
+     <img src={a1} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={a2} alt="compant-logo" style={{ flex: 0.5, width: '50px', padding: '0px 20px'}}/>
+     <img src={a3} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={a4} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={a5} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={a6} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={a8} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={a12} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={smith} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={a14} alt="compant-logo" style={{ flex: 1, width: '100px', padding: '0px 20px'}}/>
+     <img src={weather} alt="compant-logo" style={{ flex: 0.5, width: '50px', padding: '10px 20px'}}/>
 
    </Marquee>
   )

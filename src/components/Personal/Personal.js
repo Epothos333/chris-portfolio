@@ -12,7 +12,9 @@ export function Personal() {
       <section className={`${isMobile ? 'Flex-Column' : 'Flex-Row'}`}>
         <About />
         {!isMobile &&
-          <ContactForm />
+          <div className="Monster">
+            <ContactForm />
+          </div>
         }
       </section>
       <Footer />
