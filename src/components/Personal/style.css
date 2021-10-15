@@ -77,7 +77,7 @@
   background-image: url('./monster.png');
   background-repeat: no-repeat;
   background-position-x: 85%;
-  background-position-y: 27%;
+  background-position-y: 20%;
   background-size: 9rem;
   /* flex: 1 */
   flex: 1 0 33%; 
@@ -102,7 +102,7 @@
 @media only screen and (max-width: 1400px) {
   .Monster {
     background-position-x: 72%;
-    background-position-y: 27%;
+    background-position-y: 23%;
     background-size: 7rem;
   }
 }
