@@ -80,7 +80,7 @@ export function ProfessionalWork() {
           logo={pearson}
           color={'rgb(161,15,255)'}
           client={'Pearson Education'}
-          project={'enVisionMATH K-5 studen and teacher math program'}
+          project={'enVisionMATH K-5 student and teacher math program'}
           need={'Reinvent the math learning experience'}
           to={'pearson'}
           show={show === 'pearson'}

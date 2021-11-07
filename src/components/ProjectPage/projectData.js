@@ -265,7 +265,7 @@ export const projectData = [
       title: 'enVisionMATH',
       lines: [
         'Project Overview',
-        'enVisionMATH was my first significant product success, and my first Agile methods are driven by the customer first co-creating and forming the product along with us.   ',
+        'enVisionMATH was my first significant product success. We took and lean-agile approach to product development and worked directly with our customers to co-create a math program that worked for them and how their students learn math today.',
         'We began the conversation with instructors in our major markets of Texas & California. We asked instructors what they wanted out of a math series - and they freely told us!  My team and I produced prototypes and shared them with our instructor groups for feedback based on their feedback. We were close, and refinements were requested from our customers. We successfully satisfied our customers with the second round.',
         'enVisionMATH continues to dominate the market eleven years later and returned Pearson’s $9.1 million investment in 6 months - unheard of in EdTech.',
         'My role included'
