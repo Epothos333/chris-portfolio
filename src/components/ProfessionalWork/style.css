@@ -54,6 +54,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  .Cards-Container {
+    background-color: white;
+  }
+  
   .Profesh-Logo {
     object-fit: contain;
     height: 3rem;

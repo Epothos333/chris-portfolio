@@ -75,6 +75,10 @@
   text-align: end;
 }
 
+.Loader-Container {
+  margin-top: 50px;
+}
+
 @media only screen and (max-width: 800px) {
   .Project-Content-Inner-Padding {
     padding: 40px 60px 0 60px;

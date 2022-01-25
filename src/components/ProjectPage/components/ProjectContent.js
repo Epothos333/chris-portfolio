@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useViewPort } from '../../../hooks/useViewPort';
 import { ReturnButton } from './ReturnButton';
 
-export function ProjectContent({ data, border }) {
+export function ProjectContent({ data, border, setVisible }) {
+  const [rendered, setRendered] = useState(0);
   const { isMobile } = useViewPort()
+  let imagesToRender = 0;
+  data.map((item) => imagesToRender += item.images?.length)
+
+  function incrementRendered() {
+    setRendered(rendered + 1)
+  }
+
+  useEffect(() => {
+    if (rendered >= imagesToRender) {
+      setVisible()
+    }
+  }, [rendered])
+
   return (
     <div className={'Project-Content-Container'}>
       <div className={'Project-Content-Inner-Padding'}>
@@ -13,7 +27,7 @@ export function ProjectContent({ data, border }) {
             if (item.outline !== false) {
               style.border = `2px solid ${border}`
             }
-            const renderImg = <img key={`${index}-images`} style={style} alt="Project-Outcome" src={img} className={`Project-Content-Image ${item.shrink && 'Project-Contant-Shrink'}`} />;
+            const renderImg = <img key={`${index}-images`} style={style} alt="Project-Outcome" src={img} className={`Project-Content-Image ${item.shrink && 'Project-Contant-Shrink'}`} onError={() => incrementRendered()} onLoad={()  => incrementRendered()} />;
             if (item.links) {
               return (
                 <div className={'Flex-Row J-C A-C'} key={`${index}-links-container`}>
