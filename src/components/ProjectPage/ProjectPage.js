@@ -4,7 +4,7 @@ import { useViewPort } from '../../hooks/useViewPort';
 import { ProjectContent } from './components/ProjectContent';
 import { ProjectInfo } from './components/ProjectInfo';
 import { projectData } from './projectData';
-import BeatLoader from "react-spinners/BeatLoader";
+import BeatLoader from "react-spinners/FadeLoader";
 import './style.css';
 
 export function ProjectPage({ url }) {
@@ -26,7 +26,7 @@ export function ProjectPage({ url }) {
     <>
       {!visible &&
         <div className='Flex-Column A-C J-C Loader-Container '>
-          <BeatLoader color={'blue'} size={30} />
+          <BeatLoader color={'rgb(27, 100, 209)'} size={15} />
           <p style={{color: '#2f2f38'}}>Loading project. One moment please ...</p>
         </div>
       }
