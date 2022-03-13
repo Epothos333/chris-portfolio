@@ -8,7 +8,7 @@ export const MobileMenu = ({ handleClick }) => {
   return (
     <section className="Mobile-Menu-Container">
       <div className="Flex-Column A-C Mobile-Menu-Top J-S-A">
-        <div className="Flex-Column A-C J-C Full-Width">
+        <div className="Flex-Column A-C J-C Full-Width" style={{height: '100px'}}>
           <AiOutlineClose onClick={handleClick} className={'Menu-Close'} />
           <img src={logo} className={'Nav-Logo'} alt={'Chris Christopher Consulting Logo'} />
         </div>
