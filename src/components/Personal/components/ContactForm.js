@@ -35,7 +35,7 @@ export function ContactForm() {
         Cell: 773 - 297 - 7062
       </p>
       <p className="Light-Text Contact-Form-Info" style={{marginBottom: '15px'}}>
-        Email: Chris@chrisroywork.com
+        Email: croy9ch@gmail.com
       </p>
       <span className="Flex-Column" style={{backgroundColor: 'black'}}>
         <input style={{marginTop: 0}} className="Contact-Input Bold-Text" placeholder="NAME" value={name} onChange={(e) => setName(e.target.value)} />
